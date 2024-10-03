@@ -25,7 +25,7 @@ def ping():
     print("Pong")
     return jsonify({
         "msg": "Hello from the server"
-    })
+    }), 200
 
 @app.route('/recommend', methods=['POST'])
 def recommend_books():
